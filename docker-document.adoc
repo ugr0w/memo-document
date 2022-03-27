@@ -1,0 +1,25 @@
+= docker document
+
+コンテナ起動
+
+ docker container run container_name
+
+コンテナ起動(バックグラウンド)
+
+ docker container run --name activate_container -d container_name
+ -d background
+ --name activate_container 起動後のコンテナ名
+ --rm コンテナが停止されたらコンテナの破棄を行う。
+
+
+起動コンテナの確認
+
+ docker container ls
+
+コンテナを止める
+
+ docker container sotp container_name
+
+ docker container sotp container_id
+
+

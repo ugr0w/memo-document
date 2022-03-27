@@ -1,0 +1,43 @@
+= rust-document
+
+=== install
+
+linux
+
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+下記を実行
+    
+    source $HOME/.cargo/env
+    (pythonの仮想環境とおんなじ)
+
+テスト実行
+
+
+ファイル作成　hello.rs
+====
+
+    fn main() {
+      println!("Hello, World");
+    }
+
+====
+
+
+コンパイル
+
+====
+
+    rustc hello.rs
+
+====
+
+コンパイルがうまくいくと拡張子のない同じ名前のファイルができる。それをbash感覚で実行
+
+====
+
+    /bin/bash hello
+
+====
+
+Hello,Worldと出ればOK
